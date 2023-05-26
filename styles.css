@@ -1,0 +1,115 @@
+body{
+    background-color: #dedede;
+}
+#content{
+    display: block;
+    color: #003082;
+    text-align: center;
+}
+.flags{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/* Japan */
+#Japan{
+    background-color: #ffffff;
+    float: left;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+    background-color: #bc002d;
+    border-radius: 100%;
+    margin: 50px 100px;
+}
+#Japan:hover{
+    transform: scale(1.1);
+}
+/* Czechia */
+#Czechia{
+    display: inline-block;
+    background: linear-gradient(
+        to top,
+        #d7141a 0%,
+        #d7141a 50%,
+        #ffffff 50%,
+        #ffffff 100%);
+        margin-left: 50px;
+}
+#triangle{
+    border-top: 100px solid transparent;
+    border-left: 150px solid #11457e;
+	border-bottom: 100px solid transparent;
+}
+#Czechia:hover{
+    transform: scale(1.1);
+}
+/* Central African Republic */
+#CAR{
+    float: right;
+}
+.colors{
+    height: 50px;
+}
+#blue{
+    background-color: #003082;
+}
+#white{
+    background-color: #ffffff;
+}
+#green{
+    background-color: #289728;
+}
+#yellow{
+    background-color: #ffce00;
+}
+#red{
+    height: 200px;
+    width: 40px;
+    background-color: #d21034;
+    margin: -200px auto;
+}
+#star{
+    --star-color:#ffce00;
+    margin: 15px;
+    font-size:200px;
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 20px solid transparent;
+    border-bottom: 14px solid var(--star-color);
+    border-left: 20px solid transparent;
+    transform: rotate(35deg);
+}
+#star:before{
+    border-bottom: 16px solid var(--star-color);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -9px;
+    left: -13px;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+}
+#star:after{
+    position: absolute;
+    display: block;
+    top: 0.6px;
+    left: -21px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-bottom: 14px solid var(--star-color);
+    border-left: 20px solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+}
+#CAR:hover{
+    transform: scale(1.1);
+}
